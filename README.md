@@ -11,7 +11,7 @@
 
 ## 💻 Sobre o Projeto
 
-A **Pokédex Web** é uma aplicação front-end que simula o dispositivo clássico do universo Pokémon. Ela permite pesquisar qualquer Pokémon pelo **nome** ou **número de identificação (ID)**, além de permitir a navegação sequencial pelos botões da interface.
+A **Pokédex Web** é uma aplicação front-end que simula a Pokédex dos clássicos jogos de Pokémon. Ela permite pesquisar qualquer Pokémon pelo **nome** ou **número de identificação (ID)**, além de permitir a navegação sequencial pelos botões da interface.
 
 O projeto se destaca pelo uso de requisições assíncronas com `async/await` e `fetch` para consumir a [PokéAPI](https://pokeapi.co/), exibindo os sprites animados dos Pokémon da 5ª Geração (*Black & White*) com *fallback* automático para sprites estáticos.
 
