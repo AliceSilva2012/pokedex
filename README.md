@@ -1,53 +1,46 @@
-# ⚡ Pokédex 🔍
+# Pokédex 🔴⚡
 
-> Aplicação interativa em JavaScript Vanilla desenvolvida para simular a Pokédex clássica, consumindo dados dinâmicos via integração REST com a PokéAPI.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PokéAPI](https://img.shields.io/badge/PokéAPI-EF5350?style=for-the-badge&logo=pokemon&logoColor=white)
 
----
-
-### 🎯 Objetivo do Projeto
-O projeto foi construído para praticar **assincronismo no JavaScript**, requisições HTTP e manipulação avançada do DOM. A interface recria a experiência de uso da Pokédex, permitindo consultar dados e sprites animadas de mais de 1.000 Pokémon cadastrados na base de dados global.
-
----
-
-### 🛠️ Recursos & Arquitetura
-
-- **Consumo Assíncrono (`Async/Await`):** Utilização do método `fetch()` para realizar requisições de dados em tempo real à [PokéAPI](https://pokeapi.co/).
-- **Renderização Dinâmica de Sprites:** Tratamento de caminhos aninhados da API para buscar GIFs animados da 5ª Geração (*Black & White*), com sistema de *fallback* para imagens estáticas.
-- **Filtro de Busca Tolerante:** Trata entradas do usuário removendo divergências entre caixa alta e baixa (`toLowerCase()`), permitindo busca por **Nome** ou **ID**.
-- **Controle Sequencial de Estado:** Variável de controle interna para navegação fluida através dos botões *Anterior* (`btnPrev`) e *Próximo* (`btnNext`).
-- **Tratamento de Exceções & UX:**
-  - Exibição de feedback visual de *loading* durante a requisição.
-  - Ocultamento dinâmico de elementos visuais para evitar exibição de links quebrados (`display: none`).
-  - Limpeza automática do campo de busca após a confirmação.
+> Uma Pokédex interativa desenvolvida em JavaScript Vanilla que consome dados em tempo real da PokéAPI, exibindo sprites animados e informações dos Pokémon.
 
 ---
 
-### 🧱 Tecnologias Aplicadas
+## 💻 Sobre o Projeto
 
-| Camada | Tecnologia | Aplicação |
-| :--- | :--- | :--- |
-| **Interface** | HTML5 Semântico | Formulários, estruturas de exibição e controles |
-| **Estilização** | CSS3 Moderno | Layout responsivo e alinhamento do display LCD |
-| **Lógica** | JavaScript (ES6+) | Requisições à API, eventos do DOM e controle de fluxo |
-| **Dados** | PokéAPI (REST) | Fonte de dados e assets de imagens/sprites |
+A **Pokédex Web** é uma aplicação front-end que simula o dispositivo clássico do universo Pokémon. Ela permite pesquisar qualquer Pokémon pelo **nome** ou **número de identificação (ID)**, além de permitir a navegação sequencial pelos botões da interface.
+
+O projeto se destaca pelo uso de requisições assíncronas com `async/await` e `fetch` para consumir a [PokéAPI](https://pokeapi.co/), exibindo os sprites animados dos Pokémon da 5ª Geração (*Black & White*) com *fallback* automático para sprites estáticos.
 
 ---
 
-### 🕹️ Fluxo de Funcionamento (JS)
+## ⚙️ Funcionalidades
 
-1. **`fetchPokemon(pokemon)`**: Executa a chamada HTTP para a rota `/pokemon/{id_ou_nome}` e valida o *status code* `200 OK`.
-2. **`renderPokemon(pokemon)`**: Atualiza o estado da tela (limpa campos, esconde a imagem temporariamente), processa o JSON retornado e atribui os novos valores às tags do DOM.
-3. **Event Listeners**: Captura o evento `submit` do formulário prevenindo o comportamento padrão (`preventDefault()`) e escuta os disparos de clique dos botões de paginação.
+- **Pesquisa Inteligente:** Busca de Pokémon por nome ou ID, ignorando letras maiúsculas/minúsculas (`toLowerCase`).
+- **Navegação Interativa:** Botões "Anterior" e "Próximo" para percorrer a Pokédex sequencialmente.
+- **Sprites Animados:** Exibição de GIFs animados dos Pokémon em tempo real.
+- **Tratamento de Erros:** Exibição de estado de carregamento (*Carregando...*) e mensagem de erro amigável (*Não encontrado*) caso o Pokémon não exista.
+- **Interface Fiel:** Layout estilizado em CSS para simular o design físico da Pokédex clássica.
 
 ---
 
-### 🚀 Como Testar Localmente
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-# 1. Clone o repositório
-git clone [https://github.com/seu-usuario/pokedex-web.git](https://github.com/seu-usuario/pokedex-web.git)
+- **HTML5:** Estruturação da Pokédex, formulário de pesquisa, botões de controle e contêineres de imagem/texto.
+- **CSS3:** Estilização responsiva, posicionamento absoluto dos elementos na tela da Pokédex e manipulação de layout.
+- **JavaScript (ES6+):**
+  - **Consumo de API:** Requisições HTTP dinâmicas usando `fetch` e `async/await`.
+  - **Manipulação do DOM:** Atualização dinâmica de imagens, textos e limpeza automática do campo de input.
+  - **Manipulação de Eventos:** Tratamento do envio do formulário (`submit`) e cliques dos botões (`click`).
 
-# 2. Acesse a pasta do projeto
-cd pokedex-web
+---
 
-# 3. Abra o arquivo index.html no navegador
+## 📁 Estrutura do Arquivo
+
+```text
+├── index.html     # Estrutura HTML da Pokédex
+├── style.css      # Estilização visual e posicionamento dos elementos
+└── script.js      # Lógica de integração com a PokéAPI e manipulação do DOM
