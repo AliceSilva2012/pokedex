@@ -1,4 +1,4 @@
-# ⚡ Pokédex Web Application
+# ⚡ Pokédex 🔍
 
 > Aplicação interativa em JavaScript Vanilla desenvolvida para simular a Pokédex clássica, consumindo dados dinâmicos via integração REST com a PokéAPI.
 
