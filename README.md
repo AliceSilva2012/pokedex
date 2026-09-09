@@ -40,7 +40,7 @@ O projeto se destaca pelo uso de requisições assíncronas com `async/await` e 
 
 ## 🌎 Teste meu projeto no seu navegador! 
 
- **Pokédex:** [VER PROJETO.](https://hubpokedex.netlify.app)
+- **Pokédex:** [VER PROJETO.](https://hubpokedex.netlify.app)
 
 ---
 
