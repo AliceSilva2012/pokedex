@@ -43,7 +43,7 @@ O projeto se destaca pelo uso de requisições assíncronas com `async/await` e 
 ```text
 ├── index.html     # Estrutura HTML da Pokédex
 ├── style.css      # Estilização visual e posicionamento dos elementos
-└── script.js      # Lógica de integração com a PokéAPI e manipulação do DOM
+└── script.js      # Lógica de integração com a PokéAPI e manipulação do DOM```
 
 ---
 
