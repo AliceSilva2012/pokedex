@@ -73,7 +73,14 @@ O projeto se destaca pelo uso de requisições assíncronas com `async/await` e 
 
 ## 📁 Estrutura do Arquivo
 
-```text
-├── index.html     # Estrutura HTML da Pokédex
-├── style.css      # Estilização visual e posicionamento dos elementos
-└── script.js      # Lógica de integração com a PokéAPI e manipulação do DOM```
+```mermaid
+graph TD
+    A[pokedex] --> B[index.html]
+    A --> C[style.css]
+    A --> D[script.js]
+
+    style B fill:#e34f26,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#1572b6,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#f7df1e,stroke:#333,stroke-width:2px,color:#000
+```
+
