@@ -40,6 +40,12 @@ O projeto se destaca pelo uso de requisições assíncronas com `async/await` e 
 
 ---
 
+## 🌎 Teste meu projeto no seu navegador! 
+
+- **Pokédex:** [VEJA ESTE PROJETO NO SEU NAVEGADOR!](https://hubpokedex.netlify.app)
+
+---
+
 ## 🚀 Como Executar o Projeto Localmente
 
 ### Pré-requisitos
@@ -62,12 +68,6 @@ O projeto se destaca pelo uso de requisições assíncronas com `async/await` e 
 3. **Execute a aplicação:**
    - Dê um duplo clique no arquivo `index.html` para abri-lo no navegador, ou
    - Clique com o botão direito no `index.html` e selecione **Open with Live Server**.
-
----
-
-## 🌎 Teste meu projeto no seu navegador! 
-
-- **Pokédex:** [VEJA ESTE PROJETO NO SEU NAVEGADOR!](https://hubpokedex.netlify.app)
 
 ---
 
