@@ -51,10 +51,10 @@
            padding: 2.5%;
             
            outline: none; 
-           border: 2px solid,#333; /*cor da borda*/
+           border: 2px solid #333; /*cor da borda*/
            border-radius: 5px; /*arredondoooooouu*/
            color: #3a444d;
-           font-size: clamp(10px 4vw 20px);
+           font-size: clamp(10px, 4vw, 20px);
       }
       .buttons {
            position: absolute;
