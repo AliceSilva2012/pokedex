@@ -27,6 +27,7 @@
            left: 50%;
            transform: translate(-63%,5%); /*(eixos x,y)*/
            height: 115px;
+           cursor: pointer;
       }
       .pokemon_dados {
            position: absolute;
@@ -34,7 +35,7 @@
            color: #a9a9a9;
            top: 53.95%;
            right: 27%;
-           font-size: clamp(27px,4vw,30px);
+           font-size: clamp(28px,4vw,28px);
       }
       .pokemon_nome {
            color: #3a444d;
@@ -54,7 +55,7 @@
            border: 2px solid #333; /*cor da borda*/
            border-radius: 5px; /*arredondoooooouu*/
            color: #3a444d;
-           font-size: clamp(10px, 4vw, 20px);
+           font-size: clamp(5px, 5vw, 1rem);
       }
       .buttons {
            position: absolute;
